@@ -1,0 +1,30 @@
+name = 'R'
+version = '3.6.0'
+
+homepage = 'https://www.r-project.org/'
+description = """R is a free software environment for statistical computing
+ and graphics."""
+
+#toolchain = {'name': 'foss', 'version': '2019a'}
+toolchain = SYSTEM
+
+source_urls = ['https://cloud.r-project.org/src/base/R-%(version_major)s']
+sources = [SOURCE_TAR_GZ]
+checksums = ['36fcac3e452666158e62459c6fc810adc247c7109ed71c5b6c3ad5fc2bf57509']
+
+configopts = "--with-pic --enable-threads --enable-R-shlib"
+# some recommended packages may fail in a parallel build (e.g. Matrix), and
+# we're installing them anyway below
+configopts += " --with-recommended-packages=no"
+
+#exts_default_options = {
+#    'source_urls': [
+#        'https://cran.r-project.org/src/contrib/Archive/%(name)s',  # package archive
+#        'https://cran.r-project.org/src/contrib/',  # current version of packages
+#        'https://cran.freestatistics.org/src/contrib',  # mirror alternative for current packages
+#    ],
+#    'source_tmpl': '%(name)s_%(version)s.tar.gz',
+#}
+
+
+moduleclass = 'lang'
