@@ -1,0 +1,16 @@
+easyblock = 'Conda'
+
+name = 'braker'
+version = '2.1.6'
+
+homepage = ' BRAKER2 is an extension of BRAKER1 which allows for fully automated training of the gene prediction tools GeneMark-EX R14, R15, R17, F1 and AUGUSTUS from RNA-Seq and/or protein homology information, and that integrates the extrinsic evidence from RNA-Seq and protein homology information into the prediction. '
+description = """ Annotation  """
+
+toolchain = SYSTEM
+
+requirements = "braker2 genemark_es bamtools samtools genomethreader spaln exonerate blast diamond cdbtools perl"
+channels = ['bioconda' , 'thiesgehrmann', 'conda-forge', 'predector']
+builddependencies = [('Anaconda3','5.3.0')]
+#builddependencies = [('Anaconda2','5.3.0')]
+
+moduleclass = 'bio'

@@ -1,0 +1,16 @@
+easyblock = 'Conda'
+
+name = 'Trinotate'
+version = '3.2.2'
+
+homepage = ' Trinotate is a comprehensive annotation suite designed for automatic functional annotation of transcriptomes, particularly de novo assembled transcriptomes, from model or non-model organisms '
+description = """ Annotation  """
+
+toolchain = SYSTEM
+
+requirements = "trinotate trinity transdecoder sqlite blast hmmer signalp4"
+channels = ['bioconda' , 'conda-forge', 'predector']
+builddependencies = [('Anaconda3','5.3.0')]
+#builddependencies = [('Anaconda2','5.3.0')]
+
+moduleclass = 'bio'

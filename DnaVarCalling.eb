@@ -1,0 +1,16 @@
+easyblock = 'Conda'
+
+name = 'DnaVarCalling'
+version = '1.0'
+
+homepage = ' https://github.com/snakemake-workflows/dna-seq-gatk-variant-calling/blob/main/workflow/Snakefile '
+description = """ Collected group of bioinformatics tools in this module  """
+
+toolchain = SYSTEM
+
+requirements = "python snakemake=6 samtools bwa gatk4 vcftools bcftools trimmomatic bedops"
+channels = ['bioconda', 'conda-forge']
+builddependencies = [('Anaconda3','5.3.0')]
+#builddependencies = [('Anaconda2','5.3.0')]
+
+moduleclass = 'bio'

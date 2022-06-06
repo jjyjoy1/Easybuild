@@ -1,0 +1,31 @@
+# EasyBuild recipy for QIIME2
+# Author: Caspar van Leeuwen
+# SURFsara - The Netherlands
+
+easyblock = 'Conda'
+
+name = 'tcga-microbiome-prediction'
+version = '1.1'
+
+homepage = 'https://github.com/ruppinlab/'
+description = """QIIME is an open-source bioinformatics pipeline for performing microbiome analysis
+ from raw DNA sequencing data."""
+
+#source_urls = ['https://github.com/ruppinlab/tcga-microbiome-prediction/']
+#sources = ['/home/jjy4/bin/EB_Rep/tcga-microbiome-prediction.yml']
+#checksums = ['321f1bbdd1c426c03507834a9e9367f6f0fc9c28cb8eb6eae0d61f0442484d33']
+
+toolchain = SYSTEM
+
+builddependencies = [('Anaconda3', '5.3.0')]
+
+environment_file = '/home/jjy4/bin/EB_Rep/tcga-microbiome-prediction.yml'
+
+#sanity_check_commands = ['qiime info']
+
+#sanity_check_paths = {
+#    'files': ["bin/qiime"],
+#    'dirs': ["lib", "include"],
+#}
+
+moduleclass = 'bio'

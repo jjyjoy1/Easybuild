@@ -5,7 +5,7 @@
 easyblock = 'Conda'
 
 name = 'QIIME2'
-version = '2021.8'
+version = '2022.2'
 
 homepage = 'http://qiime2.org/'
 description = """QIIME is an open-source bioinformatics pipeline for performing microbiome analysis
@@ -13,13 +13,12 @@ description = """QIIME is an open-source bioinformatics pipeline for performing 
 
 source_urls = ['https://data.qiime2.org/distro/core/']
 sources = ['qiime2-%(version)s-py38-linux-conda.yml']
-checksums = ['af381370dd034b71fe72925b1890cc7bc7566e5d4409eaef91825ffb446455a0']
 
 toolchain = SYSTEM
 
 builddependencies = [('Anaconda3', '5.3.0')]
 
-environment_file = 'qiime2-%(version)s-py38-linux-conda.yml'
+environment_file = 'qiime2-2022.2-py38-linux-conda.yml'
 
 sanity_check_commands = ['qiime info']
 
