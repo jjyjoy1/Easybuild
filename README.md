@@ -30,8 +30,6 @@ EasyBuild is a Python-based HPC software build and installation framework that w
 
     Reduced manual workload: By automating repetitive tasks, EasyBuild saves HPC teams a great deal of time and effort. Administrators can leverage thousands of pre-existing easyconfig recipes contributed by the community, avoiding the need to start from scratch for common software​. 
     One HPC site reported that after switching to EasyBuild, it became a significant time-saver, allowing them to install several hundred software modules in just a few weeks – a volume of work that would be impractical to handle manually​. 
-    ​
-    ask.cyberinfrastructure.org
-    . In essence, EasyBuild relieves support staff from the burden of managing complex builds, and ensures that module files and installations are done right every time, with minimal human error.
+    In essence, EasyBuild relieves support staff from the burden of managing complex builds, and ensures that module files and installations are done right every time, with minimal human error.
 
 
