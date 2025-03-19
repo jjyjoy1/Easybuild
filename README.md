@@ -1,4 +1,5 @@
 Environment Modules are a framework for managing software packages and their versions on shared systems. They enable dynamic modification of a user’s environment through module files that set or alter environment variables like PATH and LD_LIBRARY_PATH​. This system is widely used on High-Performance Computing (HPC) clusters (and can be applied in cloud computing environments) to simplify software stack management. Instead of loading all software at once or hard-coding paths, users can load or unload modules on demand, getting exactly the software versions.
+
 Benefits of Environment Modules
 
     Scalability: Environment Modules make it feasible to maintain large software stacks with numerous applications and versions. HPC systems often have far more software installed than any single user needs, and loading everything would clutter the environment​
